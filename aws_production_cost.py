@@ -127,7 +127,7 @@ def sort(response):
             environment = i['Keys'][1]
 
             # checking for dev environment
-            if environment == 'Environment$staging':
+            if environment == 'Environment$production':
                 ser = checkService(service)
 
                 devCost[ser] += float(i['Metrics']['BlendedCost']['Amount'])
